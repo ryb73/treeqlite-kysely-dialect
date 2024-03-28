@@ -20,7 +20,6 @@
     "fp-ts": "^2.13.1",
     "io-ts": "^2.2.20",
     "io-ts-reporters": "^2.0.1",
-    "kysely": "^0.26.3",
     "treeqlite-http-client": "^0.1.0",
     "typescript": "5.3.3"
   },
@@ -34,7 +33,11 @@
     "eslint": "^8.56.0",
     "eslint-config-hardcore": "^45.1.1",
     "eslint-plugin-deprecation": "^2.0.0",
+    "kysely": "^0.26.3",
     "treeqlite-js": "^0.1.0"
+  },
+  "peerDependencies": {
+    "kysely": "^0.26.3 || ^0.27.0"
   },
   "resolutions": {
     "@typescript-eslint/eslint-plugin": "^6.21.0",
