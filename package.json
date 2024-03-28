@@ -1,0 +1,45 @@
+{
+  "name": "treeqlite-kysely-dialect",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "lib/src/index.js",
+  "types": "lib/src/index.d.ts",
+  "files": [
+    "lib/src"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf lib",
+    "lint-strict": "yarn lint --max-warnings 0",
+    "lint": "eslint . --ext ts,tsx,js",
+    "watch": "tsc -w"
+  },
+  "dependencies": {
+    "@ryb73/super-duper-parakeet": "^12.1.0",
+    "fp-ts": "^2.13.1",
+    "io-ts": "^2.2.20",
+    "io-ts-reporters": "^2.0.1",
+    "kysely": "^0.26.3",
+    "treeqlite-http-client": "^0.1.0",
+    "typescript": "5.3.3"
+  },
+  "packageManager": "yarn@4.1.1",
+  "devDependencies": {
+    "@emotion/eslint-plugin": "^11.2.0",
+    "@ryb73/eslint-config": "^13.0.2",
+    "@types/better-sqlite3": "^7.6.9",
+    "@typescript-eslint/utils": "^6.21.0",
+    "better-sqlite3": "^9.4.3",
+    "eslint": "^8.56.0",
+    "eslint-config-hardcore": "^45.1.1",
+    "eslint-plugin-deprecation": "^2.0.0",
+    "treeqlite-js": "^0.1.0"
+  },
+  "resolutions": {
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "@typescript-eslint/utils": "^6.21.0",
+    "typescript": "5.3.3"
+  }
+}
