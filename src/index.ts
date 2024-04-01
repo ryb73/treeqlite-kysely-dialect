@@ -1,6 +1,6 @@
 /* eslint-disable import/no-unused-modules */
 import { fd } from "@ryb73/super-duper-parakeet/lib/src/io/forceDecode.js";
-import { array, number, string, union } from "io-ts";
+import { array, nullType, number, string, union } from "io-ts";
 import type {
   CompiledQuery,
   DatabaseConnection,
@@ -27,7 +27,10 @@ export class TreeQLiteConnection implements DatabaseConnection {
     try {
       const execResult = await tqlExec(this.config, {
         query: compiledQuery.sql,
-        params: fd(array(union([number, string])), compiledQuery.parameters),
+        params: fd(
+          array(union([nullType, number, string])),
+          compiledQuery.parameters,
+        ),
       });
 
       switch (execResult.type) {

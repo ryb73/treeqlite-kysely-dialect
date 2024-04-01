@@ -9324,12 +9324,12 @@ __metadata:
   linkType: hard
 
 "treeqlite-http-types@npm:^0.2.0":
-  version: 0.2.0
-  resolution: "treeqlite-http-types@npm:0.2.0"
+  version: 0.2.1
+  resolution: "treeqlite-http-types@npm:0.2.1"
   dependencies:
     fp-ts: "npm:^2.16.2"
     io-ts: "npm:^2.2.21"
-  checksum: 10/4a5506691f392554ab393d0800b4d00593f5ba5d2488cc66e4120a7ed0465a376feee2ac417eeb7e57c7df4b6e864730f0c46c74967c2a13d637f6309e314ffe
+  checksum: 10/67bf58edccdf5da9fa54348322a7473928b12097d8b9f5f3fe256e79b1833d4acc35f5a32d7898d17e99b9ffac9feb75dd65229aca1c6cc3fbba0739bc954dd2
   languageName: node
   linkType: hard
 
